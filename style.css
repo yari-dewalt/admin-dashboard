@@ -2,6 +2,7 @@ body,
 html {
     margin: 0;
     border: 0;
+    font-family: "Roboto", "Times New Roman", "Courier";
 }
 
 .container {
@@ -101,14 +102,27 @@ html {
 /* Sidebar Styling */
 .sidebar {
     height: 100vh;
-    border: 2px solid green;
+
+    background-color: rgb(27, 150, 190);
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+
     grid-column: 1;
     grid-row: 1 / span 2;
+
     display: grid;
     grid-template-columns: 1fr 6fr;
     grid-template-rows: repeat(24, 1fr);
     align-items: center;
-    column-gap: 20px;
+    column-gap: 14px;
+    row-gap: 20px;
+}
+
+.sidebar img {
+    width: 30px;
+    height: 30px;
+    padding-left: 20px;
 }
 
 .sidebar li {
