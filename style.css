@@ -1,0 +1,110 @@
+body,
+html {
+    margin: 0;
+    border: 0;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+/* Header Styling */
+.header {
+    border: 2px solid blue;
+    grid-column: 2;
+    height: 140px;
+    display: grid;
+    grid-template-columns: 6fr 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+}
+
+.header .search {
+    grid-column: 1;
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: 1fr 20fr;
+}
+
+.header #search-icon {
+    grid-column: 1;
+}
+
+.header #search-bar {
+    grid-column: 2;
+}
+
+.header #notifications {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.header .profile-info-small {
+    grid-column: 3;
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+}
+
+.profile-info-small #profile-picture-small {
+    margin: 0;
+    grid-column: 1;
+}
+
+.profile-info-small #profile-name-small {
+    margin: 0;
+    grid-column: 2;
+}
+
+.header .profile-info-large {
+    grid-column: 1;
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: 1fr 3fr 3fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+}
+
+.profile-info-large #profile-picture-large {
+    margin: 0;
+    grid-column: 1;
+    grid-row: span 2;
+}
+
+.profile-info-large #intro-text {
+    margin: 0;
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.profile-info-large #profile-name-large {
+    margin: 0;
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.header .buttons {
+    grid-column: 2 / span 2;
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+}
+
+.buttons button {
+    width: 90px;
+}
+
+.sidebar {
+    border: 2px solid green;
+    grid-column: 1;
+    grid-row: 1 / span 2;
+}
+
+.main-content {
+    border: 2px solid red;
+    grid-column: 2;
+}
