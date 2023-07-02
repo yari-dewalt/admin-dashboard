@@ -98,12 +98,123 @@ html {
     width: 90px;
 }
 
+/* Sidebar Styling */
 .sidebar {
+    height: 100vh;
     border: 2px solid green;
     grid-column: 1;
     grid-row: 1 / span 2;
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    grid-template-rows: repeat(24, 1fr);
+    align-items: center;
+    column-gap: 20px;
 }
 
+.sidebar li {
+    list-style-type: none;
+}
+
+.sidebar #dashboard-image {
+    grid-column: 1;
+    grid-row: 1;
+}
+.sidebar #dashboard {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.sidebar #home-icon {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.sidebar #home {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.sidebar #profile-icon {
+    grid-column: 1;
+    grid-row: 4;
+}
+
+.sidebar #profile {
+    grid-column: 2;
+    grid-row: 4;
+}
+
+.sidebar #messages-icon {
+    grid-column: 1;
+    grid-row: 5;
+}
+
+.sidebar #messages {
+    grid-column: 2;
+    grid-row: 5;
+}
+
+.sidebar #history-icon {
+    grid-column: 1;
+    grid-row: 6;
+}
+
+.sidebar #history {
+    grid-column: 2;
+    grid-row: 6;
+}
+
+.sidebar #tasks-icon {
+    grid-column: 1;
+    grid-row: 7;
+}
+
+.sidebar #tasks {
+    grid-column: 2;
+    grid-row: 7;
+}
+
+.sidebar #communities-icon {
+    grid-column: 1;
+    grid-row: 8;
+}
+
+.sidebar #communities {
+    grid-column: 2;
+    grid-row: 8;
+}
+
+.sidebar #settings-icon {
+    grid-column: 1;
+    grid-row: 10;
+}
+
+.sidebar #settings {
+    grid-column: 2;
+    grid-row: 10;
+}
+
+.sidebar #support-icon {
+    grid-column: 1;
+    grid-row: 11;
+}
+
+.sidebar #support {
+    grid-column: 2;
+    grid-row: 11;
+}
+
+.sidebar #privacy-icon {
+    grid-column: 1;
+    grid-row: 12;
+}
+
+.sidebar #privacy {
+    grid-column: 2;
+    grid-row: 12;
+}
+
+/* Main-content Styling */
 .main-content {
     border: 2px solid red;
     grid-column: 2;
