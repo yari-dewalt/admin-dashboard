@@ -216,6 +216,117 @@ html {
 
 /* Main-content Styling */
 .main-content {
+    padding: 20px;
+    height: calc(100vh - 180px);
     border: 2px solid red;
     grid-column: 2;
+    display: grid;
+    grid-template-columns: minmax(340px, 40%) minmax(340px, 40%) 2fr;
+    grid-template-rows:  4% repeat(3, max(170px, 25%));
+    gap: 20px;
+}
+
+.main-content h3 {
+    margin: 0;
+}
+
+.main-content #your-projects {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.main-content .announcements-container {
+    grid-column: 3;
+    grid-row: 1;
+    width: 300px;
+}
+
+.main-content .announcements-container #announcements {
+    margin-bottom: 22px;
+}
+
+.main-content .announcements-content {
+    border: 2px solid yellow;
+    font-size: 14px;
+    height: 280px;
+}
+
+.main-content .trending-container {
+    grid-column: 3;
+    grid-row: 4;
+    width: 300px;
+    margin-top: -60px;
+}
+
+.main-content .trending-container #trending {
+    margin-bottom: 22px;
+}
+
+.main-content .trending-container p {
+    margin: 0;
+}
+
+.main-content .trending-content {
+    border: 2px solid yellow;
+    height: 184px;
+}
+
+.main-content .trending-content div {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    align-items: center;
+}
+
+.trending-user-icon {
+    grid-column: 1;
+    grid-row: span 2;
+}
+
+.trending-user-name {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.trending-user-bio {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.main-content .card {
+    padding: 20px;
+    height: 130px;
+    border: 2px solid black;
+    min-width: 300px;
+}
+
+.main-content #project-1 {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.main-content #project-2 {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.main-content #project-3 {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.main-content #project-4 {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.main-content #project-5 {
+    grid-column: 1;
+    grid-row: 4;
+}
+
+.main-content #project-6 {
+    grid-column: 2;
+    grid-row: 4;
 }
