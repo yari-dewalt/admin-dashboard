@@ -146,6 +146,7 @@ html {
 /* Sidebar Styling */
 .sidebar {
     height: 100vh;
+    min-width: 250px;
 
     background-color: rgb(27, 150, 190);
     color: white;
@@ -307,9 +308,23 @@ html {
 }
 
 .main-content .announcements-content {
-    border: 2px solid yellow;
-    font-size: 14px;
+    background-color: white;
+    box-shadow: 2px 2px 2px rgb(201, 198, 198);
+    border-radius: 8px;
+
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
+
+    font-size: 12px;
     height: 280px;
+    padding: 12px;
+}
+
+.announcements-content p {
+    margin: 6px 0 0 0;
+    color: rgb(115, 115, 115);
 }
 
 .main-content .trending-container {
@@ -328,21 +343,37 @@ html {
 }
 
 .main-content .trending-content {
-    border: 2px solid yellow;
-    height: 184px;
+    background-color: white;
+    box-shadow: 2px 2px 2px rgb(201, 198, 198);
+    border-radius: 8px;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    align-items: center;
+    row-gap: 14px;
+
+    padding: 10px 20px 10px 20px;
+    height: 200px;
 }
 
 .main-content .trending-content div {
     display: grid;
     grid-template-columns: 1fr 5fr;
     grid-template-rows: 1fr 1fr;
-    gap: 10px;
+    row-gap: 2px;
+    column-gap: 8px;
     align-items: center;
 }
 
 .trending-user-icon {
     grid-column: 1;
     grid-row: span 2;
+
+    border-radius: 50%;
+
+    width: 40px;
+    height: 40px;
 }
 
 .trending-user-name {
@@ -353,13 +384,46 @@ html {
 .trending-user-bio {
     grid-column: 2;
     grid-row: 2;
+
+    color: rgb(115, 115, 115);
 }
 
 .main-content .card {
     padding: 20px;
+    padding-bottom: 10px;
     height: 130px;
-    border: 2px solid black;
+
+    background-color: white;
+    box-shadow: 2px 2px 2px rgb(201, 198, 198);
+    border-radius: 8px;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 3fr 1fr;
+
     min-width: 300px;
+}
+
+.card p {
+    color: rgb(115, 115, 115);
+    max-height: 80px;
+    margin: 0;
+}
+
+.action-buttons {
+    grid-row: 3;
+    justify-self: end;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    gap: 10px;
+}
+
+.action-buttons img {
+    width: 24px;
+    height: 24px;
 }
 
 .main-content #project-1 {
