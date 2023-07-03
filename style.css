@@ -50,6 +50,11 @@ html {
     height: 30px;
 }
 
+.header #search-icon:hover {
+    cursor: pointer;
+}
+
+
 .header #search-bar {
     grid-column: 2;
 }
@@ -61,6 +66,10 @@ html {
     height: 30px;
     justify-self: end;
     margin-right: 10px;
+}
+
+.header #notifications:hover {
+    cursor: pointer;
 }
 
 .header .profile-info-small {
@@ -143,6 +152,10 @@ html {
     border-radius: 16px;
 }
 
+.buttons button:hover{
+    cursor: pointer;
+}
+
 /* Sidebar Styling */
 .sidebar {
     height: 100dvh;
@@ -170,8 +183,16 @@ html {
     padding-left: 20px;
 }
 
+.sidebar img:hover {
+    cursor: pointer;
+}
+
 .sidebar li {
     list-style-type: none;
+}
+
+.sidebar li:hover {
+    cursor: pointer;
 }
 
 .sidebar #dashboard-image {
@@ -424,6 +445,10 @@ html {
 .action-buttons img {
     width: 24px;
     height: 24px;
+}
+
+.action-buttons img:hover {
+    cursor: pointer;
 }
 
 .main-content #project-1 {
