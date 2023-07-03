@@ -13,24 +13,41 @@ html {
 
 /* Header Styling */
 .header {
-    border: 2px solid blue;
     grid-column: 2;
     height: 140px;
     display: grid;
     grid-template-columns: 6fr 1fr 2fr;
     grid-template-rows: 1fr 1fr;
     align-items: center;
+    padding: 0px 40px 0px 40px;
+    box-shadow: 0 4px 6px -2px rgb(201, 198, 198);
+    z-index: 1;
 }
 
 .header .search {
     grid-column: 1;
     grid-row: 1;
     display: grid;
-    grid-template-columns: 1fr 20fr;
+    grid-template-columns: 40px 20fr;
+    align-items: center;
+}
+
+.header input {
+    height: 30px;
+    width: 90%;
+
+    font-size: 20px;
+    padding-left: 10px;
+
+    border: none;
+    background-color: rgb(227, 230, 230);
+    border-radius: 20px;
 }
 
 .header #search-icon {
     grid-column: 1;
+    width: 30px;
+    height: 30px;
 }
 
 .header #search-bar {
@@ -38,41 +55,57 @@ html {
 }
 
 .header #notifications {
-    grid-column: 2;
+    grid-column: 1;
     grid-row: 1;
+    width: 30px;
+    height: 30px;
+    justify-self: end;
+    margin-right: 10px;
 }
 
 .header .profile-info-small {
     grid-column: 3;
     grid-row: 1;
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 30px 40px 100px;
     align-items: center;
+    justify-self: end;
+    gap: 14px;
 }
 
 .profile-info-small #profile-picture-small {
     margin: 0;
-    grid-column: 1;
+    grid-column: 2;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    justify-self: end;
 }
 
 .profile-info-small #profile-name-small {
     margin: 0;
-    grid-column: 2;
+    grid-column: 3;
+    justify-self: end;
 }
 
 .header .profile-info-large {
     grid-column: 1;
     grid-row: 2;
     display: grid;
-    grid-template-columns: 1fr 3fr 3fr;
+    grid-template-columns: 60px 3fr 3fr;
     grid-template-rows: 1fr 1fr;
     align-items: center;
+    column-gap: 20px;
+    padding-bottom: 10px;
 }
 
 .profile-info-large #profile-picture-large {
     margin: 0;
     grid-column: 1;
     grid-row: span 2;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
 }
 
 .profile-info-large #intro-text {
@@ -85,9 +118,12 @@ html {
     margin: 0;
     grid-column: 2;
     grid-row: 2;
+    min-width: 300px;
 }
 
 .header .buttons {
+    justify-self: end;
+    gap: 30px;
     grid-column: 2 / span 2;
     grid-row: 2;
     display: grid;
@@ -97,6 +133,14 @@ html {
 
 .buttons button {
     width: 90px;
+    height: 36px;
+
+    color: white;
+    font-weight: 900;
+    background-color: rgb(27, 150, 190);
+
+    border: none;
+    border-radius: 16px;
 }
 
 /* Sidebar Styling */
@@ -233,9 +277,9 @@ html {
 
 /* Main-content Styling */
 .main-content {
+    background-color: rgb(227, 230, 230);
     padding: 20px;
     height: calc(100vh - 180px);
-    border: 2px solid red;
     grid-column: 2;
     display: grid;
     grid-template-columns: minmax(340px, 40%) minmax(340px, 40%) 2fr;
