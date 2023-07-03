@@ -145,7 +145,7 @@ html {
 
 /* Sidebar Styling */
 .sidebar {
-    height: 100vh;
+    height: 100dvh;
     min-width: 250px;
 
     background-color: rgb(27, 150, 190);
@@ -280,7 +280,7 @@ html {
 .main-content {
     background-color: rgb(227, 230, 230);
     padding: 20px;
-    height: calc(100vh - 180px);
+    height: calc(100dvh - 180px);
     grid-column: 2;
     display: grid;
     grid-template-columns: minmax(340px, 40%) minmax(340px, 40%) 2fr;
